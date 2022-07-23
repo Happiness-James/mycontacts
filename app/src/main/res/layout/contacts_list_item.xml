@@ -2,11 +2,12 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
-    app:cardElevation="8dp"
-    android:layout_margin="8dp">
+    app:cardElevation="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,11 +29,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            tools:text="Happiness James"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/ivContacts"
-            app:layout_constraintTop_toTopOf="@+id/ivContacts" />
+            app:layout_constraintTop_toTopOf="@+id/ivContacts"
+            tools:text="Happiness James" />
 
         <TextView
             android:id="@+id/tvPhoneNumber"
@@ -53,11 +54,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            tools:text="happydontes@gmail.com"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/ivContacts"
-            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber" />
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber"
+            tools:text="happydontes@gmail.com" />
 
         <TextView
             android:id="@+id/tvAddress"
